@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Entry</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>My Digital Diary</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-entry.html">Editor</a></li>
+                <li><a href="vault.html">All Entries</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <h2>New Entry</h2>
+            <form id="entry-form" action="#" method="post">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="content">Content:</label><br>
+                <textarea id="content" name="content" rows="10" cols="50" required></textarea><br><br>
+
+                <button type="submit" id="save-btn">Save Entry</button>
+            </form>
+        </section>
+    </main>
+    <script src="new-entry.js"></script>
+</body>
+</html>
